@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UIWeb", "UIWeb\UIWeb.csproj", "{19C9EBF8-B4AC-48CF-8AE5-73964C468609}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaNegocio", "CapaNegocio\CapaNegocio.csproj", "{D95428A8-371F-4A46-9929-07A7676D076C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CapaDatos", "CapaDatos\CapaDatos.csproj", "{DE7AC748-6903-4534-AD6F-1707D906C0B8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{19C9EBF8-B4AC-48CF-8AE5-73964C468609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19C9EBF8-B4AC-48CF-8AE5-73964C468609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19C9EBF8-B4AC-48CF-8AE5-73964C468609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19C9EBF8-B4AC-48CF-8AE5-73964C468609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95428A8-371F-4A46-9929-07A7676D076C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95428A8-371F-4A46-9929-07A7676D076C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95428A8-371F-4A46-9929-07A7676D076C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95428A8-371F-4A46-9929-07A7676D076C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE7AC748-6903-4534-AD6F-1707D906C0B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE7AC748-6903-4534-AD6F-1707D906C0B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE7AC748-6903-4534-AD6F-1707D906C0B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE7AC748-6903-4534-AD6F-1707D906C0B8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C60A0DDF-42A9-4B04-9508-FE8B93B88C68}
+	EndGlobalSection
+EndGlobal

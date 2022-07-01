@@ -1,0 +1,44 @@
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\bin\Debug\RN.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\bin\Debug\RN.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\bin\Debug\RN.pdb
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\bin\Debug\CapaDatos.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\bin\Debug\CapaDatos.pdb
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\bin\Debug\CapaDatos.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\obj\Debug\RN.csprojAssemblyReference.cache
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\obj\Debug\RN.csproj.CoreCompileInputs.cache
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\obj\Debug\RN.csproj.CopyComplete
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\obj\Debug\RN.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploBaseDeDatos-2020\RN\obj\Debug\RN.pdb
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\bin\Debug\RN.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\bin\Debug\RN.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\bin\Debug\RN.pdb
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\bin\Debug\CapaDatos.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\bin\Debug\CapaDatos.pdb
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\bin\Debug\CapaDatos.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\obj\Debug\RN.csprojAssemblyReference.cache
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\obj\Debug\RN.csproj.CoreCompileInputs.cache
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\obj\Debug\RN.csproj.CopyComplete
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\obj\Debug\RN.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\RN\obj\Debug\RN.pdb
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\bin\Debug\RN.exe.config
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\bin\Debug\RN.exe
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\bin\Debug\RN.pdb
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\bin\Debug\CapaDatos.exe
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\bin\Debug\CapaDatos.pdb
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\bin\Debug\CapaDatos.exe.config
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\obj\Debug\RN.csprojAssemblyReference.cache
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\obj\Debug\RN.csproj.CoreCompileInputs.cache
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\obj\Debug\RN.csproj.CopyComplete
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\obj\Debug\RN.exe
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\RN\obj\Debug\RN.pdb
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\bin\Debug\RN.exe.config
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\bin\Debug\RN.exe
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\bin\Debug\RN.pdb
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\bin\Debug\CapaDatos.exe
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\bin\Debug\CapaDatos.pdb
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\bin\Debug\CapaDatos.exe.config
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\obj\Debug\RN.csproj.AssemblyReference.cache
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\obj\Debug\RN.csproj.CoreCompileInputs.cache
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\obj\Debug\RN.csproj.CopyComplete
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\obj\Debug\RN.exe
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\RN\obj\Debug\RN.pdb

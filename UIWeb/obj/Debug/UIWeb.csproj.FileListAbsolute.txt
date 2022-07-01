@@ -1,0 +1,193 @@
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\UIWeb.dll.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\UIWeb.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\UIWeb.pdb
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\csc.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\csc.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\csc.rsp
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\csi.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\csi.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\csi.rsp
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.AppContext.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Console.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.Compression.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Net.Http.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.ValueTuple.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\vbc.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\vbc.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\vbc.rsp
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\RN.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\CapaDatos.exe
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\RN.pdb
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\RN.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\CapaDatos.pdb
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\bin\CapaDatos.exe.config
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.csprojAssemblyReference.cache
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.csproj.CoreCompileInputs.cache
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.csproj.CopyComplete
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.dll
+C:\Users\cnune\Documents\Visual Studio 2019\Proyectos\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.pdb
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\UIWeb.dll.config
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\UIWeb.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\UIWeb.pdb
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\csc.exe
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\csc.exe.config
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\csc.rsp
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\csi.exe
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\csi.exe.config
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\csi.rsp
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.AppContext.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Console.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.Compression.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Net.Http.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.ValueTuple.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\vbc.exe
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\vbc.exe.config
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\vbc.rsp
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\RN.exe
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\CapaDatos.exe
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\RN.pdb
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\RN.exe.config
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\CapaDatos.pdb
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\bin\CapaDatos.exe.config
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.csprojAssemblyReference.cache
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.csproj.CoreCompileInputs.cache
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.csproj.CopyComplete
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.dll
+C:\Users\CarlosAlberto\Documents\Visual Studio 2019\Proyectos\EjemploWEB-Session-2020\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.pdb
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\UIWeb.dll.config
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\UIWeb.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\UIWeb.pdb
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\csc.exe
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\csc.exe.config
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\csc.rsp
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\csi.exe
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\csi.exe.config
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\csi.rsp
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.AppContext.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Console.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.Compression.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Net.Http.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Net.Sockets.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.ValueTuple.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.XPath.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\vbc.exe
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\vbc.exe.config
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\vbc.rsp
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\VBCSCompiler.exe
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\CapaDatos.pdb
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.csproj.AssemblyReference.cache
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.csproj.CoreCompileInputs.cache
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.csproj.CopyComplete
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\obj\Debug\UIWeb.pdb
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\CapaNegocio.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\CapaDatos.dll
+C:\Users\fl\Desktop\elec\EjemploWEB-2020\UIWeb\bin\CapaNegocio.pdb
