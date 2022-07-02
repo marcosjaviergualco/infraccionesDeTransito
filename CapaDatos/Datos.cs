@@ -19,7 +19,7 @@ namespace CapaDatos
     {
         //Para Access 2000-2003
         private static string LugarBase;
-        private static string Str = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\fl\\Documents\\GitHub\\infraccionesDeTransito\\UI\\bin\\Debug\\persistencia\\infracciones.mdb";
+        private static string Str = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\infraccionesDeTransito\\UI\\bin\\Debug\\persistencia\\infracciones.mdb";
         //Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\bin\Debug\Persistencia\basePersonas.mdb
         private static OleDbConnection Con;
         private static OleDbCommand Cmd;
