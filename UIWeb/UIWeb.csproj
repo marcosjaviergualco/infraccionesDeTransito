@@ -68,8 +68,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgregarTipoInfraccion.aspx" />
-    <Content Include="Inicio.aspx" />
     <Content Include="MenuAdmin.aspx" />
+    <Content Include="ModificarTipoInfraccion.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -80,19 +80,19 @@
     <Compile Include="AgregarTipoInfraccion.aspx.designer.cs">
       <DependentUpon>AgregarTipoInfraccion.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Inicio.aspx.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Inicio.aspx.designer.cs">
-      <DependentUpon>Inicio.aspx</DependentUpon>
-    </Compile>
     <Compile Include="MenuAdmin.aspx.cs">
       <DependentUpon>MenuAdmin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="MenuAdmin.aspx.designer.cs">
       <DependentUpon>MenuAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModificarTipoInfraccion.aspx.cs">
+      <DependentUpon>ModificarTipoInfraccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ModificarTipoInfraccion.aspx.designer.cs">
+      <DependentUpon>ModificarTipoInfraccion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

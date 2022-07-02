@@ -8,15 +8,14 @@ namespace CapaNegocio
 {
     public class RegistroInfraccion
     {
-
-        private Vehiculo vehiculo;
         private TipoInfraccion tipoInfraccion;
         private DateTime fecha_de_suceso;
         private DateTime fecha_de_vencimiento;
+        private string dominio;
 
-        public RegistroInfraccion(Vehiculo unVehiculo, TipoInfraccion unTipo, DateTime fecha_de_suceso)
+        public RegistroInfraccion(string unDominio, TipoInfraccion unTipo, DateTime fecha_de_suceso)
         {
-            this.vehiculo = unVehiculo;
+            this.dominio = unDominio;
             this.tipoInfraccion = unTipo;
             this.fecha_de_suceso = fecha_de_suceso;
             // this.fecha_de_vencimiento = fecha_de_suceso + 30; *ver*

@@ -30,16 +30,24 @@ namespace CapaNegocio
         public int IdTipo
         {
             get { return idTipo; }
+            set { idTipo = value; }
         }
 
         public string Descripcion
         {
             get { return descripcion; }
+            set { descripcion = value; }
         }
 
         public float Importe
         {
             get { return importe; }
+            set { importe = value; }
+        }
+
+        public override string ToString()
+        {
+            return idTipo + " " + descripcion + " " + importe;
         }
 
     }

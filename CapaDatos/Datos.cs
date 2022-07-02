@@ -19,7 +19,7 @@ namespace CapaDatos
     {
         //Para Access 2000-2003
         private static string LugarBase;
-        private static string Str = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\infraccionesDeTransito\\UI\\bin\\Debug\\persistencia\\infracciones.mdb";
+        private static string Str = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\fl\\Documents\\GitHub\\infraccionesDeTransito\\UI\\bin\\Debug\\persistencia\\infracciones.mdb";
         //Provider=Microsoft.Jet.OLEDB.4.0;Data Source=|DataDirectory|\bin\Debug\Persistencia\basePersonas.mdb
         private static OleDbConnection Con;
         private static OleDbCommand Cmd;
@@ -96,6 +96,31 @@ namespace CapaDatos
             }
             return todoBien;
         }
+
+        public static bool eliminarTipoInfraccion(int idTipo )
+        {
+            bool estado = false;
+            try
+            {
+                string strCmd = "DELETE FROM TipoInfraccion WHERE idTipo=" + idTipo + ";";
+                Con = new OleDbConnection(Str);
+                Con.Open();
+                Cmd = new OleDbCommand(strCmd, Con);
+                Cmd.ExecuteNonQuery();
+                Con.Close();
+                Cmd.Dispose();
+                estado = true;
+            }
+            catch (Exception ex)
+            {
+                string error = ex.Message;
+
+            }
+
+            return estado;
+        }
+
+
 
     }
 }

@@ -13,21 +13,23 @@ namespace CapaNegocio
         private List<TipoInfraccion> tiposInfraccion;
         private List<RegistroInfraccion> infracciones;
         private List<Pago> pagos;
-        private List<Vehiculo> vehiculos;
 
         public Administradora()
         {
             tiposInfraccion = new List<TipoInfraccion>();
             infracciones = new List<RegistroInfraccion>();
             pagos = new List<Pago>();
-            vehiculos = new List<Vehiculo>();
 
             recuperarTodo();
         }
 
         public void recuperarTodo()
         {
-            //recuperar Tipos de Infraccion
+            recuperarTiposInfraccion();
+        }
+
+        public void recuperarTiposInfraccion()
+        {
             int unIdTipo;
             string unaDesc;
             float unImporte;
@@ -65,6 +67,35 @@ namespace CapaNegocio
             datos.Add(ti.Importe);
 
             return datos;
+        }
+
+        public List<TipoInfraccion> TiposInfraccion
+        {
+            get { return tiposInfraccion; }
+        }
+
+        public TipoInfraccion darTipoInfraccion(int indice)
+        {
+            return tiposInfraccion[indice];
+        }
+
+        public bool modificar(TipoInfraccion ti, TipoInfraccion tiModificado)
+        {
+            bool todoBien = false;
+
+            if (tiModificado != null)
+            {
+                todoBien = Datos.eliminarTipoInfraccion(ti.IdTipo);
+                todoBien = Datos.insertarTipoInfraccion(pasarTipoARelacional(tiModificado), tiModificado.sosGrave());
+
+                tiposInfraccion.Remove(ti);
+                tiposInfraccion.Add(tiModificado);
+            }
+
+            if (todoBien)
+                Datos.RecuperarTiposDeInfraccion();
+
+            return todoBien;
         }
 
         /* 

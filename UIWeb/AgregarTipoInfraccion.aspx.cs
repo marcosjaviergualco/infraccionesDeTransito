@@ -39,7 +39,7 @@ namespace UIWeb
                     ti = new TipoInfraccionLeve(id, descripcion, importe);
 
                 if (adm.agregar(ti))
-                    Response.Redirect("Inicio.aspx");
+                    Response.Redirect("MenuAdmin.aspx");
                 else
                     LabelError.Text = "Error al crear el tipo de infraccion";
 
@@ -53,7 +53,7 @@ namespace UIWeb
 
         protected void ButtonCancelar_Click1(object sender, EventArgs e)
         {
-            Response.Redirect("Inicio.aspx");
+            Response.Redirect("MenuAdmin.aspx");
         }
     }
 }
