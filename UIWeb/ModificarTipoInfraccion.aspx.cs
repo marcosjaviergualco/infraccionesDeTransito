@@ -26,7 +26,7 @@ namespace UIWeb
                 if (RadioButtonGrave.Checked)
                     tiModificado = new TipoInfraccionGrave(idTipo, desc, imp);
                 else
-                    tiModificado = new TipoInfraccionGrave(idTipo, desc, imp);
+                    tiModificado = new TipoInfraccionLeve(idTipo, desc, imp);
 
                 if (adm.modificar(ti, tiModificado))
                     Label9.Text = "ACTUALIZACION REALIZADA CON EXITO!!!!!";
@@ -59,6 +59,11 @@ namespace UIWeb
         protected void ButtonModificar_Click(object sender, EventArgs e)
         {
             Response.Redirect("ModificarTipoInfraccion.aspx");
+        }
+
+        protected void ButtonCancelar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("MenuAdmin.aspx");
         }
     }
 }
