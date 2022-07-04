@@ -34,9 +34,21 @@ namespace UIWeb
                     total += infracciones[i].darImporte();
                 }
 
+                Session["total"] = total;
+                Session["infraccioness"] = infracciones;
+
                 LabelTotal.Text = "$ "+total.ToString();
 
             }
+
+            recuperarTotaleInfracciones();
+
+        }
+
+        protected void recuperarTotaleInfracciones()
+        {
+            total = (float)(Session["total"]);
+            infracciones = (List<RegistroInfraccion>)(Session["infraccioness"]);
         }
 
         protected void ButtonGenerarPago_Click(object sender, EventArgs e)
@@ -52,18 +64,27 @@ namespace UIWeb
 
             // Create a font
             XFont font = new XFont("Verdana", 20, XFontStyle.Bold);
+            XFont font2 = new XFont("Times New Roman", 10, XFontStyle.Regular);
 
             // Draw the text
             gfx.DrawString("Orden de pago", font, XBrushes.Black,
               new XRect(0, 0, page.Width, page.Height),
-              XStringFormats.Center);
+              XStringFormats.TopCenter);
 
-            //Getting fields on the pdf form
-            
+            int paraListarInfracciones = 70;
+            for (int i = 0; i<infracciones.Count; i++)
+            {
+                gfx.DrawString("\n"+infracciones[i].ToString(), font2, XBrushes.Black,
+                    new XRect(50, paraListarInfracciones+=20, page.Width, page.Height),
+                    XStringFormats.TopLeft);
+            }
+
+            gfx.DrawString("TOTAL: $" + total, font, XBrushes.Black, 
+                new XRect(-30, 0, page.Width, page.Height), XStringFormats.BottomRight);
             
 
             // Save the document...
-            string filename = "C:\\Users\\fl\\Documents\\GitHub\\infraccionesDeTransito\\UIWeb\\HelloWorld.pdf";
+            string filename = "C:\\Users\\fl\\Documents\\GitHub\\infraccionesDeTransito\\UIWeb\\OrdenDePago.pdf";
             document.Save(filename);
             // ...and start a viewer.
             Process.Start(filename);
