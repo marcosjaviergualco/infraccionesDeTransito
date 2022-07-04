@@ -26,7 +26,7 @@ namespace CapaNegocio
             this.fecha_de_registro = fecha_de_registro;
             int diasDelMes = DateTime.DaysInMonth(DateTime.Now.Year, DateTime.Now.Month);
             this.fecha_de_vencimiento = fecha_de_suceso.AddDays(diasDelMes).ToString();
-            
+
         }
 
         public override string ToString()
@@ -34,6 +34,24 @@ namespace CapaNegocio
             return "Dominio: " + this.dominio + "Descripción: " + this.descripcion + "Tipo de infracción: " + this.tipoInfraccion;
         }
 
+        public string Dominio
+        {
+            get { return dominio; }
+        }
+
+        public TipoInfraccion TipoInfraccion
+        {
+            get { return tipoInfraccion; }
+        }
+
+        public float darImporte()
+        {
+            float subtotal = 0;
+
+            subtotal = tipoInfraccion.calcularImporte(fecha_de_vencimiento);
+
+            return subtotal;
+        }
 
     }
 }

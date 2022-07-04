@@ -11,6 +11,7 @@ namespace UIWeb
     public partial class MenuAdmin : System.Web.UI.Page
     {
         Administradora admin;
+        string unDominio;
         protected void Page_Load(object sender, EventArgs e)
         {
             
@@ -25,6 +26,8 @@ namespace UIWeb
                 ListBoxTipoInfraccion.DataBind();
                 
             }
+            unDominio = TextBoxDominio.Text.ToString();
+            Session["dominio"] = unDominio;
         }
         public void recuperarAdmin()
         {
@@ -50,6 +53,11 @@ namespace UIWeb
         protected void ButtonRegistrarInfraccion_Click(object sender, EventArgs e)
         {
             Response.Redirect("RegistrarInfraccion.aspx");
+        }
+
+        protected void ButtonConsultarInfracciones_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ConsultarInfracciones.aspx");
         }
     }
 }

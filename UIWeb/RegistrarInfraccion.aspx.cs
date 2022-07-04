@@ -34,7 +34,7 @@ namespace UIWeb
             RegistroInfraccion ri;
             string codigo = txtCodigo.Text;
             string dominio = txtDominio.Text;
-            TipoInfraccion tipoInfraccion = Administradora.buscarTipoInfraccion(ddTipoInfraccion.SelectedIndex);
+            TipoInfraccion tipoInfraccion = admin.buscarTipoInfraccion(ddTipoInfraccion.SelectedIndex);
             string descripcion = txtDescripcion.Text;
             string fechaRegistro = cFechaRegistracion.SelectedDate.ToString();
             DateTime fechaSuceso = cFechaSuceso.SelectedDate;

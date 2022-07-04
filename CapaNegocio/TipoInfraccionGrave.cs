@@ -20,5 +20,23 @@ namespace CapaNegocio
             return true;
         }
 
+        public override float calcularImporte(string fechaVenc)
+        {
+            float subtotal = 0;
+            DateTime fechaVencimiento = DateTime.ParseExact(fechaVenc, "M/d/yyyy h:mm:ss tt", null);
+            DateTime hoy = DateTime.Today;
+
+            if ((fechaVencimiento - hoy).Days >= 25)
+            {
+                int aux = 100 - descuento_veinticinco_dias;
+                subtotal += Importe * aux / 100;
+            }
+            else
+            {
+                subtotal += Importe;
+            }
+
+            return subtotal;
+        }
     }
 }

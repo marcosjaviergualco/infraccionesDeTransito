@@ -44,6 +44,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="PdfSharp, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting, Version=1.50.5147.0, Culture=neutral, PublicKeyToken=f94615aa0424f9eb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PDFsharp.1.50.5147\lib\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -68,6 +74,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AgregarTipoInfraccion.aspx" />
+    <Content Include="ConsultarInfracciones.aspx" />
     <Content Include="MenuAdmin.aspx" />
     <Content Include="ModificarTipoInfraccion.aspx" />
     <Content Include="Web.config" />
@@ -80,6 +87,13 @@
     </Compile>
     <Compile Include="AgregarTipoInfraccion.aspx.designer.cs">
       <DependentUpon>AgregarTipoInfraccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarInfracciones.aspx.cs">
+      <DependentUpon>ConsultarInfracciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarInfracciones.aspx.designer.cs">
+      <DependentUpon>ConsultarInfracciones.aspx</DependentUpon>
     </Compile>
     <Compile Include="MenuAdmin.aspx.cs">
       <DependentUpon>MenuAdmin.aspx</DependentUpon>
