@@ -13,6 +13,7 @@ namespace UIWeb
         Administradora admin;
         protected void Page_Load(object sender, EventArgs e)
         {
+            
             if (!IsPostBack)
             {
                 admin = new Administradora();
@@ -44,6 +45,11 @@ namespace UIWeb
                 Session["tipoInfraccion"] = ti;
                 Response.Redirect("ModificarTipoInfraccion.aspx");
             }
+        }
+
+        protected void ButtonRegistrarInfraccion_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("RegistrarInfraccion.aspx");
         }
     }
 }

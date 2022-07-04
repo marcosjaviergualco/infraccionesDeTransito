@@ -17,24 +17,35 @@ namespace UIWeb
             if (this.IsPostBack)
             {
                 recuperarAdmin();
-                int idTipo = int.Parse(TextBoxCodigo.Text);
-                string desc = TextBoxDescripcion.Text.ToString();
-                float imp = float.Parse(TextBoxImporte.Text.ToString());
+                /*
+                if (TextBoxCodigo.Text == "" || TextBoxDescripcion.Text == "" || TextBoxImporte.Text == "")
+                {
+                    lblValidacion.Text = "Los campos de Código, descripción e importe deben estar completos.";
+                }
+                else { */
 
-                TipoInfraccion tiModificado;
+                    int idTipo = int.Parse(TextBoxCodigo.Text);
+                    string desc = TextBoxDescripcion.Text.ToString();
+                    float imp = float.Parse(TextBoxImporte.Text.ToString());
 
-                if (RadioButtonGrave.Checked)
-                    tiModificado = new TipoInfraccionGrave(idTipo, desc, imp);
-                else
-                    tiModificado = new TipoInfraccionLeve(idTipo, desc, imp);
+                    TipoInfraccion tiModificado;
 
-                if (adm.modificar(ti, tiModificado))
-                    Label9.Text = "ACTUALIZACION REALIZADA CON EXITO!!!!!";
-                else
-                    Label9.Text = "hubo un error";
+                    if (RadioButtonGrave.Checked)
+                        tiModificado = new TipoInfraccionGrave(idTipo, desc, imp);
+                    else
+                        tiModificado = new TipoInfraccionLeve(idTipo, desc, imp);
+
+                    if (adm.modificar(ti, tiModificado))
+                        Label9.Text = "ACTUALIZACION REALIZADA CON EXITO!!!!!";
+                    else
+                        Label9.Text = "hubo un error";
+
+                //}
+                
             }
             else
             {
+                
                 recuperarAdmin();
                 TextBoxCodigo.Text = ti.IdTipo.ToString();
                 TextBoxDescripcion.Text = ti.Descripcion.ToString();
@@ -44,8 +55,9 @@ namespace UIWeb
                     RadioButtonGrave.Checked = true;
                 else
                     RadioButtonLeve.Checked = true;
-            }
-            
+                
+                
+            } 
 
         }
         public void recuperarAdmin()

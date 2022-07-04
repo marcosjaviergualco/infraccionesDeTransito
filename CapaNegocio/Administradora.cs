@@ -51,6 +51,14 @@ namespace CapaNegocio
             }
         }
 
+        public static TipoInfraccion buscarTipoInfraccion(int indice)
+        {
+            ArrayList datosTipoInfraccion = Datos.RecuperarTipoDeInfraccion(indice);
+            TipoInfraccion ti = new TipoInfraccionLeve(12, "  ", 123);
+
+            return ti;
+        }
+
         public bool agregar(TipoInfraccion ti)
         {
             bool status = Datos.insertarTipoInfraccion(pasarTipoARelacional(ti), ti.sosGrave());

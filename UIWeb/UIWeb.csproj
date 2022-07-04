@@ -71,6 +71,7 @@
     <Content Include="MenuAdmin.aspx" />
     <Content Include="ModificarTipoInfraccion.aspx" />
     <Content Include="Web.config" />
+    <Content Include="RegistrarInfraccion.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AgregarTipoInfraccion.aspx.cs">
@@ -95,6 +96,13 @@
       <DependentUpon>ModificarTipoInfraccion.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RegistrarInfraccion.aspx.cs">
+      <DependentUpon>RegistrarInfraccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegistrarInfraccion.aspx.designer.cs">
+      <DependentUpon>RegistrarInfraccion.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
