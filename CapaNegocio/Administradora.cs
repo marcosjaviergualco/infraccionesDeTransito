@@ -50,11 +50,22 @@ namespace CapaNegocio
                 tiposInfraccion.Add(ti);
             }
         }
-
-        public static TipoInfraccion buscarTipoInfraccion(int indice)
+        //ver el tema de la busqueda por el idTipo
+        public static TipoInfraccion buscarTipoInfraccion(string descripcion)
         {
-            ArrayList datosTipoInfraccion = Datos.RecuperarTipoDeInfraccion(indice);
-            TipoInfraccion ti = new TipoInfraccionLeve(12, "  ", 123);
+            TipoInfraccion ti;
+            int position = descripcion.IndexOf(" ");
+            string desc = descripcion.Substring(0, position);
+            ArrayList datosTipoInfraccion = Datos.RecuperarTipoDeInfraccion(desc);
+
+            if(datosTipoInfraccion[3].ToString() == "L")
+            {
+                ti = new TipoInfraccionLeve(int.Parse(datosTipoInfraccion[0].ToString()), datosTipoInfraccion[1].ToString(), float.Parse(datosTipoInfraccion[2].ToString()));
+            }
+            else
+            {
+                ti = new TipoInfraccionGrave(int.Parse(datosTipoInfraccion[0].ToString()), datosTipoInfraccion[1].ToString(), float.Parse(datosTipoInfraccion[2].ToString()));
+            }
 
             return ti;
         }
@@ -75,6 +86,27 @@ namespace CapaNegocio
             datos.Add(ti.Importe);
 
             return datos;
+        }
+
+        public ArrayList pasarRegistroInfraccionARelacional(RegistroInfraccion ri)
+        {
+            ArrayList datos = new ArrayList();
+            bool insercionOK = false;
+            datos.Add(ri.Codigo);
+            datos.Add(ri.TipoInfraccion.IdTipo);
+            datos.Add(ri.Descripcion);
+            datos.Add(ri.Fecha_de_registro);
+            datos.Add(ri.Fecha_de_suceso.ToString());
+            datos.Add(ri.Fecha_de_vencimiento);
+            datos.Add(ri.Dominio);
+            
+            return datos;
+        }
+
+        public bool insertar(RegistroInfraccion ri)
+        {
+            bool insercionOK = Datos.insertarRegistroInfraccion(pasarRegistroInfraccionARelacional(ri));
+            return insercionOK;
         }
 
         public List<TipoInfraccion> TiposInfraccion

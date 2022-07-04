@@ -63,12 +63,13 @@ namespace CapaDatos
             return datos;
         }
 
-        public static ArrayList RecuperarTipoDeInfraccion(int indice)
+        public static ArrayList RecuperarTipoDeInfraccion(string descripcion)
         {
             ArrayList datos = new ArrayList();
             try
             {
-                string strCmd = "SELECT * FROM TipoInfraccion WHERE idTipo = " + indice;
+                int idTipo = int.Parse(descripcion);
+                string strCmd = "SELECT * FROM TipoInfraccion WHERE idTipo = " + idTipo;
                 Con = new OleDbConnection(Str);
                 Con.Open();
                 Da = new OleDbDataAdapter(strCmd, Con);
@@ -151,7 +152,42 @@ namespace CapaDatos
             return estado;
         }
 
+        public static bool insertarRegistroInfraccion(ArrayList datos)
+        {
+            bool todoBien = false;
+            if (datos != null && datos.Count == 7)
+            {
+                try
+                {
+                    string codigo = datos[0].ToString();
+                    int idTipo = int.Parse(datos[1].ToString());
+                    string descripcion = datos[2].ToString();
+                    string fecha_de_registro = datos[3].ToString();
+                    string fecha_de_suceso = datos[4].ToString();
+                    string fecha_de_vencimiento = datos[5].ToString();
+                    string dominio = datos[6].ToString();
 
+                    string strCmd = "INSERT INTO RegistroInfraccion(codigo,idTipoInfraccion,descripcion," +
+                        "fechaRegistro,fechaSuceso,fechaDeVencimiento,dominio) " +
+                        "VALUES ('" + codigo + "'," + idTipo + ",'" + descripcion + "','" + 
+                        fecha_de_registro + "','" + fecha_de_suceso +"','" + fecha_de_vencimiento +
+                        "','" + dominio + "')";
+                    Con = new OleDbConnection(Str);
+                    Con.Open();
+                    Cmd = new OleDbCommand(strCmd, Con);
+                    Cmd.ExecuteNonQuery();
+                    Con.Close();
+                    Cmd.Dispose();
+                    todoBien = true;
+                }
+                catch (Exception ex)
+                {
+                    string error = ex.Message;
+
+                }
+            }
+            return todoBien;
+        }
 
     }
 }

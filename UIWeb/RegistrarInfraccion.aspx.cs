@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Collections;
 using CapaNegocio;
 
 namespace UIWeb
@@ -32,14 +33,19 @@ namespace UIWeb
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             RegistroInfraccion ri;
+            admin = new Administradora();
             string codigo = txtCodigo.Text;
             string dominio = txtDominio.Text;
-            TipoInfraccion tipoInfraccion = Administradora.buscarTipoInfraccion(ddTipoInfraccion.SelectedIndex);
+            TipoInfraccion tipoInfraccion = Administradora.buscarTipoInfraccion(ddTipoInfraccion.SelectedValue);
             string descripcion = txtDescripcion.Text;
             string fechaRegistro = cFechaRegistracion.SelectedDate.ToString();
             DateTime fechaSuceso = cFechaSuceso.SelectedDate;
 
             ri = new RegistroInfraccion(codigo, dominio, descripcion, tipoInfraccion, fechaSuceso, fechaRegistro);
+
+            bool statusInsercion = admin.insertar(ri);
+
+            Response.Redirect("MenuAdmin.aspx");
         }
     }
 }
