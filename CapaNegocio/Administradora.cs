@@ -44,7 +44,7 @@ namespace CapaNegocio
                 idTipo = int.Parse(datosRegistros[a + 1].ToString());
                 desc = datosRegistros[a + 2].ToString();
                 fechaRegistro = datosRegistros[a + 3].ToString();
-                fechaSuceso = DateTime.ParseExact(datosRegistros[a + 4].ToString(), "M/d/yyyy h:mm:ss tt", null);
+                fechaSuceso = DateTime.ParseExact(datosRegistros[a + 4].ToString(), "d/M/yyyy HH:mm:ss", null);
                 fechaDeVencimiento = datosRegistros[a + 5].ToString();
                 dominio = datosRegistros[a + 6].ToString();
                 condicion = datosRegistros[a + 7].ToString();

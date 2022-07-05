@@ -68,20 +68,16 @@ namespace UIWeb
         protected void ButtonGenerarPago_Click(object sender, EventArgs e)
         {
             recuperarTotaleInfracciones();
-            // Create a new PDF document
+            
             PdfDocument document = new PdfDocument();
 
-            // Create an empty page
             PdfPage page = document.AddPage();
 
-            // Get an XGraphics object for drawing
             XGraphics gfx = XGraphics.FromPdfPage(page);
 
-            // Create a font
             XFont font = new XFont("Verdana", 20, XFontStyle.Bold);
             XFont font2 = new XFont("Times New Roman", 10, XFontStyle.Regular);
 
-            // Draw the text
             gfx.DrawString("Orden de pago", font, XBrushes.Black,
               new XRect(0, 0, page.Width, page.Height),
               XStringFormats.TopCenter);
@@ -105,13 +101,14 @@ namespace UIWeb
             admin.insertar(p);
 
             gfx.DrawString("TOTAL: $" + total, font, XBrushes.Black,
-                new XRect(-30, 0, page.Width, page.Height), XStringFormats.BottomRight);
+                new XRect(-30, 30, page.Width, page.Height), XStringFormats.BottomRight);
 
+            gfx.DrawString("FECHA DE PAGO: " + DateTime.Today.ToString(), font, XBrushes.Black,
+                new XRect(30, 30, page.Width, page.Height), XStringFormats.BottomLeft);
 
-            // Save the document...
-            string filename = "C:\\Users\\fl\\Documents\\GitHub\\infraccionesDeTransito\\UIWeb\\OrdenDePago.pdf";
+            string filename = "C:\\GitHub\\infraccionesDeTransito\\UIWeb\\OrdenDePago.pdf";
             document.Save(filename);
-            // ...and start a viewer.
+
             Process.Start(filename);
 
             Response.Redirect("MenuAdmin.aspx");

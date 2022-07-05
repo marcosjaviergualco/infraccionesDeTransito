@@ -23,7 +23,7 @@ namespace CapaNegocio
         public override float calcularImporte(string fechaVenc)
         {
             float subtotal = 0;
-            DateTime fechaVencimiento = DateTime.ParseExact(fechaVenc, "M/d/yyyy h:mm:ss tt", null);
+            DateTime fechaVencimiento = DateTime.ParseExact(fechaVenc, "d/M/yyyy HH:mm:ss", null);
             DateTime hoy = DateTime.Today;
 
             if ((fechaVencimiento - hoy).Days >= 25)
