@@ -64,7 +64,7 @@ namespace UIWeb
 
         protected void ButtonGenerarPago_Click(object sender, EventArgs e)
         {
-      
+
             // Create a new PDF document
             PdfDocument document = new PdfDocument();
 
@@ -83,17 +83,24 @@ namespace UIWeb
               new XRect(0, 0, page.Width, page.Height),
               XStringFormats.TopCenter);
 
+            Pago p;
             int paraListarInfracciones = 70;
-            for (int i = 0; i<infracciones.Count; i++)
+            Random rand = new Random();
+            for (int i = 0; i < infracciones.Count; i++)
             {
-                gfx.DrawString("\n"+infracciones[i].ToString(), font2, XBrushes.Black,
-                    new XRect(50, paraListarInfracciones+=20, page.Width, page.Height),
+                gfx.DrawString("\n" + infracciones[i].ToString(), font2, XBrushes.Black,
+                    new XRect(50, paraListarInfracciones += 20, page.Width, page.Height),
                     XStringFormats.TopLeft);
+
+                int cod;
+                cod = admin.Pagos.Count + 1;
+                p = new Pago(cod, infracciones, total, DateTime.Today.ToString());
+                admin.insertar(p);
             }
 
-            gfx.DrawString("TOTAL: $" + total, font, XBrushes.Black, 
+            gfx.DrawString("TOTAL: $" + total, font, XBrushes.Black,
                 new XRect(-30, 0, page.Width, page.Height), XStringFormats.BottomRight);
-            
+
 
             // Save the document...
             string filename = "C:\\GitHub\\infraccionesDeTransito\\UIWeb\\OrdenDePago.pdf";

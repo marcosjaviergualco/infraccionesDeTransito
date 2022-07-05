@@ -27,6 +27,7 @@ namespace CapaNegocio
         {
             recuperarTiposInfraccion();
             recuperarInfracciones();
+            recuperarPagos();
         }
 
         public void recuperarInfracciones()
@@ -75,6 +76,55 @@ namespace CapaNegocio
 
                 tiposInfraccion.Add(ti);
             }
+        }
+
+        public void recuperarPagos()
+        {
+            int unCodigo;
+            string unaFechaPago;
+            float unMontoTotal;
+            List<RegistroInfraccion> unaListaInfracciones;
+            ArrayList datosPagos = Datos.RecuperarPagos();
+            Pago p;
+            for (int a = 0; a < datosPagos.Count; a = a + 3)
+            {
+                unCodigo = int.Parse(datosPagos[a].ToString());
+                unaFechaPago = datosPagos[a + 1].ToString();
+                unMontoTotal = float.Parse(datosPagos[a + 2].ToString());
+
+                unaListaInfracciones = recuperarPago_RegistroInfraccion(unCodigo);
+
+                p = new Pago(unCodigo, unaListaInfracciones, unMontoTotal, unaFechaPago);
+                pagos.Add(p);
+            }
+        }
+
+        public List<RegistroInfraccion> recuperarPago_RegistroInfraccion(int unCodigo)
+        {
+            ArrayList datos = Datos.RecuperarPago_RegistroInfraccion(unCodigo);
+
+            List<RegistroInfraccion> lista = new List<RegistroInfraccion>();
+
+            for (int i=0; i<datos.Count; i++) {
+                lista.Add(buscarInfraccion(datos[i].ToString()));
+            }
+
+            return lista;
+        }
+
+        public RegistroInfraccion buscarInfraccion(string unCodInfraccion)
+        {
+            RegistroInfraccion ri = null;
+            int i = 0;
+
+            while (unCodInfraccion != infracciones[i].Codigo && i < infracciones.Count)
+            {
+                i++;
+            }
+
+            ri = infracciones[i];
+
+            return ri;
         }
 
         public TipoInfraccion buscarTipoInfraccion(int indice)
@@ -146,11 +196,40 @@ namespace CapaNegocio
             return datos;
         }
 
+        public ArrayList pasarPagoARelacional(Pago p)
+        {
+            ArrayList datos = new ArrayList();
+            datos.Add(p.Codigo);
+            datos.Add(p.Infracciones);
+            datos.Add(p.MontoTotal);
+            datos.Add(p.FechaPago);
+
+            return datos;
+        }
+
         public bool insertar(RegistroInfraccion ri)
         {
             bool insercionOK = Datos.insertarRegistroInfraccion(pasarRegistroInfraccionARelacional(ri));
             return insercionOK;
         }
+
+        public bool insertar(Pago p)
+        {
+            bool insercionOK;
+            insercionOK = Datos.insertarPago(pasarPagoARelacional(p));
+            ArrayList inf = new ArrayList();
+            foreach (RegistroInfraccion item in p.Infracciones)
+            {
+                inf.Add(item.Codigo);
+            }
+            insercionOK = Datos.insertarPago_Registro(inf, p.Codigo);
+
+            this.pagos.Add(p);
+
+            return insercionOK;
+        }
+
+        
 
         public List<TipoInfraccion> TiposInfraccion
         {
@@ -195,6 +274,11 @@ namespace CapaNegocio
             }
 
             return lista;
+        }
+
+        public List<Pago> Pagos
+        {
+            get { return pagos; }
         }
 
         /* 
