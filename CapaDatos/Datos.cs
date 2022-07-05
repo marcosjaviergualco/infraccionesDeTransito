@@ -228,13 +228,13 @@ namespace CapaDatos
         public static bool insertarPago(ArrayList datos)
         {
             bool todoBien = false;
-            if (datos != null && datos.Count == 3)
+            if (datos != null && datos.Count == 4)
             {
                 try
                 {
                     int codigo = int.Parse(datos[0].ToString());
-                    string fechaPago = datos[2].ToString();
-                    float montoTotal = float.Parse(datos[3].ToString());
+                    string fechaPago = datos[3].ToString();
+                    float montoTotal = float.Parse(datos[2].ToString());
                     string strCmd = "INSERT INTO Pago(codigo,fechaDePago,importeAbonado) " +
                         "VALUES (" + codigo + ",'" + fechaPago + "'," + montoTotal + ")";
                     Con = new OleDbConnection(Str);

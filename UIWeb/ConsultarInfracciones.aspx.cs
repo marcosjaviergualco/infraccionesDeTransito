@@ -46,18 +46,19 @@ namespace UIWeb
                     Session["total"] = total;
                     Session["infraccioness"] = infracciones;
                     LabelTotal.Text = "$ " + total.ToString();
-                    recuperarTotaleInfracciones();
+                    //recuperarTotaleInfracciones();
 
                 }
 
             }
 
-            
+            recuperarTotaleInfracciones();
 
         }
 
         protected void recuperarTotaleInfracciones()
         {
+            admin = (Administradora)(Session["administra"]);
             total = (float)(Session["total"]);
             infracciones = (List<RegistroInfraccion>)(Session["infraccioness"]);
         }
@@ -92,18 +93,19 @@ namespace UIWeb
                     new XRect(50, paraListarInfracciones += 20, page.Width, page.Height),
                     XStringFormats.TopLeft);
 
-                int cod;
-                cod = admin.Pagos.Count + 1;
-                p = new Pago(cod, infracciones, total, DateTime.Today.ToString());
-                admin.insertar(p);
             }
+
+            int cod;
+            cod = admin.Pagos.Count + 1;
+            p = new Pago(cod, infracciones, total, DateTime.Today.ToString());
+            admin.insertar(p);
 
             gfx.DrawString("TOTAL: $" + total, font, XBrushes.Black,
                 new XRect(-30, 0, page.Width, page.Height), XStringFormats.BottomRight);
 
 
             // Save the document...
-            string filename = "C:\\GitHub\\infraccionesDeTransito\\UIWeb\\OrdenDePago.pdf";
+            string filename = "C:\\infraccionesDeTransito\\UIWeb\\OrdenDePago.pdf";
             document.Save(filename);
             // ...and start a viewer.
             Process.Start(filename);
