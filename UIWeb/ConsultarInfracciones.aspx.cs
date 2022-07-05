@@ -19,15 +19,19 @@ namespace UIWeb
         Administradora admin;
         string unDominio;
         List<RegistroInfraccion> infracciones;
+        List<RegistroInfraccion> infraccionesPagas;
         float total = 0;
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack){
                 admin = (Administradora)Session["administra"];
                 unDominio = (string)Session["dominio"];
-                infracciones = admin.buscarInfracciones(unDominio);
+                infracciones = admin.buscarInfraccionesImpagas(unDominio);
                 ListBoxInfracciones.DataSource = infracciones;
                 ListBoxInfracciones.DataBind();
+                infraccionesPagas = admin.buscarInfraccionesPagas(unDominio);
+                ListBoxPagas.DataSource = infraccionesPagas;
+                ListBoxPagas.DataBind();
                 Label_vehiculo.Text = unDominio;
 
                 if (infracciones.Count == 0)
@@ -46,14 +50,12 @@ namespace UIWeb
                     Session["total"] = total;
                     Session["infraccioness"] = infracciones;
                     LabelTotal.Text = "$ " + total.ToString();
-                    //recuperarTotaleInfracciones();
+                    recuperarTotaleInfracciones();
 
                 }
 
             }
-
-            recuperarTotaleInfracciones();
-
+            
         }
 
         protected void recuperarTotaleInfracciones()
@@ -65,7 +67,7 @@ namespace UIWeb
 
         protected void ButtonGenerarPago_Click(object sender, EventArgs e)
         {
-
+            recuperarTotaleInfracciones();
             // Create a new PDF document
             PdfDocument document = new PdfDocument();
 
@@ -93,6 +95,8 @@ namespace UIWeb
                     new XRect(50, paraListarInfracciones += 20, page.Width, page.Height),
                     XStringFormats.TopLeft);
 
+                infracciones[i].Condicion = "P";
+                admin.actualizarRegistroInfraccion(infracciones[i].Codigo);
             }
 
             int cod;
@@ -105,7 +109,7 @@ namespace UIWeb
 
 
             // Save the document...
-            string filename = "C:\\infraccionesDeTransito\\UIWeb\\OrdenDePago.pdf";
+            string filename = "C:\\Users\\fl\\Documents\\GitHub\\infraccionesDeTransito\\UIWeb\\OrdenDePago.pdf";
             document.Save(filename);
             // ...and start a viewer.
             Process.Start(filename);

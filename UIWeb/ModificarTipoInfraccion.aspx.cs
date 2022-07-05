@@ -45,23 +45,32 @@ namespace UIWeb
         protected void ButtonModificar_Click(object sender, EventArgs e)
         {
 
-            int idTipo = int.Parse(TextBoxCodigo.Text);
-            string desc = TextBoxDescripcion.Text.ToString();
-            float imp = float.Parse(TextBoxImporte.Text.ToString());
+            try
+            {
+                int idTipo = int.Parse(TextBoxCodigo.Text);
+                string desc = TextBoxDescripcion.Text.ToString();
+                if (desc == "")
+                    throw new Exception();
+                float imp = float.Parse(TextBoxImporte.Text.ToString());
 
-            TipoInfraccion tiModificado;
+                TipoInfraccion tiModificado;
 
-            if (RadioButtonGrave.Checked)
-                tiModificado = new TipoInfraccionGrave(idTipo, desc, imp);
-            else
-                tiModificado = new TipoInfraccionLeve(idTipo, desc, imp);
+                if (RadioButtonGrave.Checked)
+                    tiModificado = new TipoInfraccionGrave(idTipo, desc, imp);
+                else
+                    tiModificado = new TipoInfraccionLeve(idTipo, desc, imp);
 
-            if (adm.modificar(ti, tiModificado))
-                Label9.Text = "ACTUALIZACION REALIZADA CON EXITO!!!!!";
-            else
-                Label9.Text = "hubo un error";
+                if (adm.modificar(ti, tiModificado))
+                    Label9.Text = "ACTUALIZACION REALIZADA CON EXITO!!!!!";
+                else
+                    Label9.Text = "hubo un error";
 
-            
+            }
+            catch (Exception)
+            {
+                Label9.Text = "TODOS LOS CAMPOS SON MANDATORIOS.";
+            }
+
         }
 
         protected void ButtonCancelar_Click(object sender, EventArgs e)

@@ -32,23 +32,24 @@ namespace CapaNegocio
 
         public void recuperarInfracciones()
         {
-            string codigo, desc, fechaRegistro, fechaDeVencimiento, dominio;
+            string codigo, desc, fechaRegistro, fechaDeVencimiento, dominio, condicion;
             DateTime fechaSuceso;
             int idTipo;
             ArrayList datosRegistros = Datos.recuperarInfracciones();
             RegistroInfraccion ri;
 
-            for (int a = 0; a < datosRegistros.Count; a = a + 7)
+            for (int a = 0; a < datosRegistros.Count; a = a + 8)
             {
                 codigo = datosRegistros[a].ToString();
                 idTipo = int.Parse(datosRegistros[a + 1].ToString());
                 desc = datosRegistros[a + 2].ToString();
                 fechaRegistro = datosRegistros[a + 3].ToString();
-                fechaSuceso = DateTime.ParseExact(datosRegistros[a + 4].ToString(), "d/M/yyyy HH:mm:ss", null);
+                fechaSuceso = DateTime.ParseExact(datosRegistros[a + 4].ToString(), "M/d/yyyy h:mm:ss tt", null);
                 fechaDeVencimiento = datosRegistros[a + 5].ToString();
                 dominio = datosRegistros[a + 6].ToString();
+                condicion = datosRegistros[a + 7].ToString();
 
-                ri = new RegistroInfraccion(codigo, dominio, desc, buscarTipoInfraccion(idTipo), fechaSuceso, fechaRegistro);
+                ri = new RegistroInfraccion(codigo, dominio, desc, buscarTipoInfraccion(idTipo), fechaSuceso, fechaRegistro, condicion);
 
                 infracciones.Add(ri);
             }
@@ -192,6 +193,7 @@ namespace CapaNegocio
             datos.Add(ri.Fecha_de_suceso.ToString());
             datos.Add(ri.Fecha_de_vencimiento);
             datos.Add(ri.Dominio);
+            datos.Add(ri.Condicion);
             
             return datos;
         }
@@ -210,6 +212,11 @@ namespace CapaNegocio
         public bool insertar(RegistroInfraccion ri)
         {
             bool insercionOK = Datos.insertarRegistroInfraccion(pasarRegistroInfraccionARelacional(ri));
+            if (insercionOK)
+            {
+                this.infracciones = new List<RegistroInfraccion>();
+                this.recuperarInfracciones();
+            }
             return insercionOK;
         }
 
@@ -276,9 +283,40 @@ namespace CapaNegocio
             return lista;
         }
 
+        public List<RegistroInfraccion> buscarInfraccionesImpagas(string unDominio)
+        {
+            List<RegistroInfraccion> lista = new List<RegistroInfraccion>();
+            for (int i = 0; i < infracciones.Count; i++)
+            {
+                if (infracciones[i].Dominio == unDominio && infracciones[i].Condicion=="I")
+                    lista.Add(infracciones[i]);
+            }
+
+            return lista;
+        }
+
+        public List<RegistroInfraccion> buscarInfraccionesPagas(string unDominio)
+        {
+            List<RegistroInfraccion> lista = new List<RegistroInfraccion>();
+            for (int i = 0; i < infracciones.Count; i++)
+            {
+                if (infracciones[i].Dominio == unDominio && infracciones[i].Condicion == "P")
+                    lista.Add(infracciones[i]);
+            }
+
+            return lista;
+        }
+
         public List<Pago> Pagos
         {
             get { return pagos; }
+        }
+
+        public bool actualizarRegistroInfraccion(string cod)
+        {
+            bool todoOk = Datos.actualizarRegistroInfraccion(cod);
+
+            return todoOk;
         }
 
         /* 

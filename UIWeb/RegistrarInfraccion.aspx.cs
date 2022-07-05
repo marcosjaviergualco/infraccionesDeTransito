@@ -48,7 +48,7 @@ namespace UIWeb
             }
             else
             {
-                ri = new RegistroInfraccion(codigo, dominio, descripcion, tipoInfraccion, fechaSuceso, fechaRegistro);
+                ri = new RegistroInfraccion(codigo, dominio, descripcion, tipoInfraccion, fechaSuceso, fechaRegistro, "I");
                 bool statusInsercion = admin.insertar(ri);
                 Response.Redirect("MenuAdmin.aspx");
             }

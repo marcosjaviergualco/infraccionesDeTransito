@@ -17,12 +17,14 @@
         <asp:ListBox ID="ListBoxInfracciones" runat="server" style="z-index: 1; left: 13px; top: 47px; position: absolute; height: 207px; width: 1275px"></asp:ListBox>
         <div style="margin-left: 80px">
         </div>
-        <asp:Label ID="LabelTotal" runat="server" style="z-index: 1; left: 575px; top: 289px; position: absolute"></asp:Label>
+        <asp:Label ID="LabelTotal" runat="server" style="z-index: 1; left: 134px; top: 294px; position: absolute"></asp:Label>
         <p>
             &nbsp;</p>
         <div style="margin-left: 40px">
         </div>
-        <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 475px; top: 287px; position: absolute" Text="TOTAL:"></asp:Label>
+        <asp:Label ID="Label1" runat="server" style="z-index: 1; left: 60px; top: 295px; position: absolute" Text="TOTAL:"></asp:Label>
+        <asp:ListBox ID="ListBoxPagas" runat="server" style="z-index: 1; left: 539px; top: 330px; position: absolute; height: 131px; width: 416px"></asp:ListBox>
+        <asp:Label ID="Label2" runat="server" style="z-index: 1; left: 544px; top: 308px; position: absolute" Text="Infracciones pagas"></asp:Label>
     </form>
 </body>
 </html>
