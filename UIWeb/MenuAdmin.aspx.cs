@@ -24,7 +24,8 @@ namespace UIWeb
 
                 ListBoxTipoInfraccion.DataSource = admin.TiposInfraccion;
                 ListBoxTipoInfraccion.DataBind();
-                
+                ButtonModificarTipoInfraccion.Enabled = false;
+
             }
             unDominio = TextBoxDominio.Text.ToString();
             Session["dominio"] = unDominio;
@@ -48,6 +49,7 @@ namespace UIWeb
                 Session["tipoInfraccion"] = ti;
                 Response.Redirect("ModificarTipoInfraccion.aspx");
             }
+
         }
 
         protected void ButtonRegistrarInfraccion_Click(object sender, EventArgs e)
@@ -58,6 +60,15 @@ namespace UIWeb
         protected void ButtonConsultarInfracciones_Click(object sender, EventArgs e)
         {
             Response.Redirect("ConsultarInfracciones.aspx");
+        }
+
+        protected void ListBoxTipoInfraccion_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (ListBoxTipoInfraccion.SelectedItem.Value != null)
+            {
+                ButtonModificarTipoInfraccion.Enabled = true;
+            }
+
         }
     }
 }

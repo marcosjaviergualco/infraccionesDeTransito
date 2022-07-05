@@ -49,7 +49,7 @@ namespace CapaNegocio
 
         public override string ToString()
         {
-            return idTipo + " " + descripcion + " " + importe;
+            return idTipo + " " + descripcion + " " + importe + "" ;
         }
 
         public abstract float calcularImporte(string fechaVenc);

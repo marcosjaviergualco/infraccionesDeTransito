@@ -32,6 +32,7 @@ namespace UIWeb
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
+            
             RegistroInfraccion ri;
             admin = new Administradora();
             string codigo = txtCodigo.Text;
@@ -41,11 +42,17 @@ namespace UIWeb
             string fechaRegistro = cFechaRegistracion.SelectedDate.ToString();
             DateTime fechaSuceso = cFechaSuceso.SelectedDate;
 
-            ri = new RegistroInfraccion(codigo, dominio, descripcion, tipoInfraccion, fechaSuceso, fechaRegistro);
+            if (codigo == "" || dominio == "" || descripcion == "")
+            {
+                Manejo_error.Text = "SE REQUIEREN COMPLETAR TODOS LOS CAMPOS.";
+            }
+            else
+            {
+                ri = new RegistroInfraccion(codigo, dominio, descripcion, tipoInfraccion, fechaSuceso, fechaRegistro);
+                bool statusInsercion = admin.insertar(ri);
+                Response.Redirect("MenuAdmin.aspx");
+            }
 
-            bool statusInsercion = admin.insertar(ri);
-
-            Response.Redirect("MenuAdmin.aspx");
         }
     }
 }

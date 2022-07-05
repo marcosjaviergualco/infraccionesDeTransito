@@ -28,20 +28,31 @@ namespace UIWeb
                 infracciones = admin.buscarInfracciones(unDominio);
                 ListBoxInfracciones.DataSource = infracciones;
                 ListBoxInfracciones.DataBind();
+                Label_vehiculo.Text = unDominio;
 
-                for (int i = 0; i<infracciones.Count; i++)
+                if (infracciones.Count == 0)
                 {
-                    total += infracciones[i].darImporte();
+                    LabelTotal.Text ="0."+ " -- EL VEHICULO NO TIENE INFRACCIONES A PAGAR.";
+                    ButtonGenerarPago.Enabled = false;
                 }
+                else
+                {
 
-                Session["total"] = total;
-                Session["infraccioness"] = infracciones;
+                    for (int i = 0; i < infracciones.Count; i++)
+                    {
+                        total += infracciones[i].darImporte();
+                    }
 
-                LabelTotal.Text = "$ "+total.ToString();
+                    Session["total"] = total;
+                    Session["infraccioness"] = infracciones;
+                    LabelTotal.Text = "$ " + total.ToString();
+                    recuperarTotaleInfracciones();
+
+                }
 
             }
 
-            recuperarTotaleInfracciones();
+            
 
         }
 
@@ -53,6 +64,7 @@ namespace UIWeb
 
         protected void ButtonGenerarPago_Click(object sender, EventArgs e)
         {
+      
             // Create a new PDF document
             PdfDocument document = new PdfDocument();
 

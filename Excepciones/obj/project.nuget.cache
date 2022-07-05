@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "umpJCqluaAe8b64OC1cQ8vAhAX6WJYBZeY5oo/9t1kzFB9u03+QX649BfsLQOETWlenDgF7PGEK+oEdWxfSbNA==",
+  "dgSpecHash": "5XEaTTVgZL3bBJ7V13NGpnzcms4xoFXf4IM+jr9P6XaZ+2bMHqJH39XOqp/gvE8mZA0piq1VuTkU24N9tc7xAA==",
   "success": true,
-  "projectFilePath": "C:\\infraccionesDeTransito\\Excepciones\\Excepciones.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\BAVALOS\\Documents\\GitHub\\infraccionesDeTransito\\Excepciones\\Excepciones.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\BAVALOS\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\BAVALOS\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\BAVALOS\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512"
+  ],
   "logs": []
 }

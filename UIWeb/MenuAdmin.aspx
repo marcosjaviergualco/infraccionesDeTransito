@@ -5,18 +5,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .newStyle1 {
+            font-size: small;
+            font-style: normal;
+            color: #000000;
+            text-transform: none;
+        }
+        .newStyle2 {
+            font-size: small;
+            font-style: normal;
+        }
+        div {
+            border: 3px;
+            margin: 10px;
+            padding: 5px;
+        }
+    </style>
 </head>
-<body>
+<body style="height: 471px">
     <form id="form1" runat="server">
+        <div><H3>MENU PRINCIPAL</H3></div>
+        <div><asp:Button ID="ButtonRegistrarInfraccion" runat="server" Text="REGISTRAR NUEVA INFRACCIÓN" OnClick="ButtonRegistrarInfraccion_Click" /></div>
+        <div><asp:Button ID="ButtonAgregarTipoInfraccion" runat="server" OnClick="ButtonAgregarTipoInfraccion_Click" Text="AGREGAR TIPO DE INFRACCION" /></div>
         <div>
+            <div><p class="newStyle1">INGRESAR PATENTE</p><asp:TextBox ID="TextBoxDominio" runat="server" Style="width:150px;"></asp:TextBox></div>
+            <div><asp:Button ID="ButtonConsultarInfracciones" runat="server" OnClick="ButtonConsultarInfracciones_Click" Text="CONSULTAR INFRACCIONES" /></div>
         </div>
-        <asp:Button ID="ButtonRegistrarInfraccion" runat="server" style="z-index: 1; left: 10px; top: 75px; position: absolute" Text="Registrar Nueva Infracción" OnClick="ButtonRegistrarInfraccion_Click" />
-        <asp:Button ID="ButtonAgregarTipoInfraccion" runat="server" OnClick="ButtonAgregarTipoInfraccion_Click" style="z-index: 1; left: 10px; top: 149px; position: absolute" Text="Agregar Tipo de Infracción" />
-        <asp:Button ID="ButtonModificarTipoInfraccion" runat="server" style="z-index: 1; left: 10px; top: 226px; position: absolute" Text="Modificar Tipo de Infracción (escoger uno)" OnClick="ButtonModificarTipoInfraccion_Click" />
-        <asp:ListBox ID="ListBoxTipoInfraccion" runat="server" style="z-index: 1; left: 11px; top: 259px; position: absolute; height: 126px; width: 359px"></asp:ListBox>
-        <asp:Label ID="LabelError" runat="server" style="z-index: 1; left: 396px; top: 293px; position: absolute"></asp:Label>
-        <asp:TextBox ID="TextBoxDominio" runat="server" style="z-index: 1; left: 551px; top: 77px; position: absolute; width: 195px"></asp:TextBox>
-        <asp:Button ID="ButtonConsultarInfracciones" runat="server" OnClick="ButtonConsultarInfracciones_Click" style="z-index: 1; left: 554px; top: 113px; position: absolute; width: 197px" Text="Consultar infracciones" />
-    </form>
+        <div>
+          <p class="newStyle2"> SELECCIONAR TIPO DE INFRACCIÓN A MODIFICAR</p><asp:ListBox ID="ListBoxTipoInfraccion" runat="server" OnSelectedIndexChanged="ListBoxTipoInfraccion_SelectedIndexChanged" AutoPostBack="True" ></asp:ListBox>
+          <div><asp:Button ID="ButtonModificarTipoInfraccion" runat="server" Text="MODIFICAR" OnClick="ButtonModificarTipoInfraccion_Click" /></div>
+          <asp:Label ID="LabelError" runat="server"></asp:Label>   
+        </div>
+     </form>
 </body>
 </html>

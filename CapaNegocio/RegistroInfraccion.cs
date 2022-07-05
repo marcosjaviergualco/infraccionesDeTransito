@@ -82,7 +82,7 @@ namespace CapaNegocio
 
         public override string ToString()
         {
-            return "Dominio: " + this.dominio + "Descripción: " + this.descripcion + "Tipo de infracción: " + this.tipoInfraccion;
+            return "Dominio:     " + this.dominio + "     - Descripción:    " + this.descripcion + "    - Tipo de infracción: " + this.tipoInfraccion;
         }
 
 

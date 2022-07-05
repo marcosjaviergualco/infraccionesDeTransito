@@ -42,33 +42,6 @@ namespace UIWeb
         protected global::System.Web.UI.WebControls.Button ButtonAgregarTipoInfraccion;
 
         /// <summary>
-        /// ButtonModificarTipoInfraccion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonModificarTipoInfraccion;
-
-        /// <summary>
-        /// ListBoxTipoInfraccion control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ListBox ListBoxTipoInfraccion;
-
-        /// <summary>
-        /// LabelError control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LabelError;
-
-        /// <summary>
         /// TextBoxDominio control.
         /// </summary>
         /// <remarks>
@@ -85,5 +58,32 @@ namespace UIWeb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button ButtonConsultarInfracciones;
+
+        /// <summary>
+        /// ListBoxTipoInfraccion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ListBox ListBoxTipoInfraccion;
+
+        /// <summary>
+        /// ButtonModificarTipoInfraccion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonModificarTipoInfraccion;
+
+        /// <summary>
+        /// LabelError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelError;
     }
 }

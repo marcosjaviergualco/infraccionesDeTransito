@@ -52,6 +52,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <br />
         <br />
+        <asp:Label ID="Manejo_error" runat="server" BackColor="Red"></asp:Label>
         <br />
         <br />
         <br />

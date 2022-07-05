@@ -42,8 +42,6 @@ namespace UIWeb
             ti = (TipoInfraccion)Session["tipoInfraccion"];
         }
 
-        // agregar excepciones!!!!!!!!
-        // ver modificar categoria
         protected void ButtonModificar_Click(object sender, EventArgs e)
         {
 

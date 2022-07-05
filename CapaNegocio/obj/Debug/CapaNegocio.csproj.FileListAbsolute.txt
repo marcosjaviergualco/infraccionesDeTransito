@@ -25,3 +25,12 @@ C:\Users\fl\Documents\GitHub\infraccionesDeTransito\CapaNegocio\bin\Debug\CapaNe
 C:\Users\fl\Documents\GitHub\infraccionesDeTransito\CapaNegocio\bin\Debug\CapaDatos.dll
 C:\Users\fl\Documents\GitHub\infraccionesDeTransito\CapaNegocio\bin\Debug\CapaDatos.pdb
 C:\Users\fl\Documents\GitHub\infraccionesDeTransito\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\BAVALOS\Documents\GitHub\infraccionesDeTransito\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\BAVALOS\Documents\GitHub\infraccionesDeTransito\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\BAVALOS\Documents\GitHub\infraccionesDeTransito\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\BAVALOS\Documents\GitHub\infraccionesDeTransito\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\BAVALOS\Documents\GitHub\infraccionesDeTransito\CapaNegocio\obj\Debug\CapaNegocio.csproj.AssemblyReference.cache
+C:\Users\BAVALOS\Documents\GitHub\infraccionesDeTransito\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\BAVALOS\Documents\GitHub\infraccionesDeTransito\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+C:\Users\BAVALOS\Documents\GitHub\infraccionesDeTransito\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\BAVALOS\Documents\GitHub\infraccionesDeTransito\CapaNegocio\obj\Debug\CapaNegocio.pdb
