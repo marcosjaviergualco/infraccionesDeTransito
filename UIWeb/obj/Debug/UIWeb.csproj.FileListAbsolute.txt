@@ -317,3 +317,15 @@ C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\obj\Debug\UIWeb.csproj
 C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\obj\Debug\UIWeb.csproj.CopyComplete
 C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\obj\Debug\UIWeb.dll
 C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\obj\Debug\UIWeb.pdb
+C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\bin\PdfSharp.Charting.dll
+C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\bin\PdfSharp.dll
+C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\bin\PdfSharp.xml
+C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\bin\PdfSharp.Charting.xml
+C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\bin\de\PdfSharp.resources.dll
+C:\Users\fl\Documents\GitHub\infraccionesDeTransito\UIWeb\bin\de\PdfSharp.Charting.resources.dll
+C:\infraccionesDeTransito\UIWeb\bin\PdfSharp.Charting.dll
+C:\infraccionesDeTransito\UIWeb\bin\PdfSharp.dll
+C:\infraccionesDeTransito\UIWeb\bin\PdfSharp.xml
+C:\infraccionesDeTransito\UIWeb\bin\PdfSharp.Charting.xml
+C:\infraccionesDeTransito\UIWeb\bin\de\PdfSharp.resources.dll
+C:\infraccionesDeTransito\UIWeb\bin\de\PdfSharp.Charting.resources.dll

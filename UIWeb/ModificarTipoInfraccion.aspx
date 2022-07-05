@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
         </div>
-        <asp:TextBox ID="TextBoxCodigo" runat="server" style="z-index: 1; left: 10px; top: 54px; position: absolute"></asp:TextBox>
+        <asp:TextBox ID="TextBoxCodigo" runat="server" style="z-index: 1; left: 10px; top: 54px; position: absolute" ReadOnly="True"></asp:TextBox>
         <asp:Button ID="ButtonModificar" runat="server" OnClick="ButtonModificar_Click" style="z-index: 1; left: 8px; top: 249px; position: absolute" Text="MODIFICAR" />
         <asp:Button ID="ButtonCancelar" runat="server" style="z-index: 1; left: 155px; top: 251px; position: absolute" Text="CANCELAR" OnClick="ButtonCancelar_Click" />
         <asp:RadioButton ID="RadioButtonGrave" runat="server" GroupName="categoria" style="z-index: 1; left: 303px; top: 65px; position: absolute" Text="Grave" />

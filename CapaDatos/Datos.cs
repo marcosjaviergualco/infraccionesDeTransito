@@ -152,6 +152,40 @@ namespace CapaDatos
             return estado;
         }
 
+        public static ArrayList recuperarInfracciones()
+        {
+            ArrayList datos = new ArrayList();
+            try
+            {
+                string strCmd = "SELECT * FROM RegistroInfraccion ORDER BY codigo";
+                Con = new OleDbConnection(Str);
+                Con.Open();
+                Da = new OleDbDataAdapter(strCmd, Con);
+                Ds = new DataSet();
+                Da.Fill(Ds);
+
+                for (int i = 0; i < Ds.Tables[0].Rows.Count; i++)
+                {
+                    datos.Add(Ds.Tables[0].Rows[i].ItemArray[0].ToString());
+                    datos.Add(Ds.Tables[0].Rows[i].ItemArray[1].ToString());
+                    datos.Add(Ds.Tables[0].Rows[i].ItemArray[2].ToString());
+                    datos.Add(Ds.Tables[0].Rows[i].ItemArray[3].ToString());
+                    datos.Add(Ds.Tables[0].Rows[i].ItemArray[4].ToString());
+                    datos.Add(Ds.Tables[0].Rows[i].ItemArray[5].ToString());
+                    datos.Add(Ds.Tables[0].Rows[i].ItemArray[6].ToString());
+
+                }
+                Con.Close();
+                Ds.Dispose();
+                Da.Dispose();
+            }
+            catch (Exception ex)
+            {
+                string error = ex.Message;
+            }
+            return datos;
+        }
+
         public static bool insertarRegistroInfraccion(ArrayList datos)
         {
             bool todoBien = false;

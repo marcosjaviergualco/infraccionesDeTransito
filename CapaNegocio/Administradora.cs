@@ -26,6 +26,32 @@ namespace CapaNegocio
         public void recuperarTodo()
         {
             recuperarTiposInfraccion();
+            recuperarInfracciones();
+        }
+
+        public void recuperarInfracciones()
+        {
+            string codigo, desc, fechaRegistro, fechaDeVencimiento, dominio;
+            DateTime fechaSuceso;
+            int idTipo;
+            ArrayList datosRegistros = Datos.recuperarInfracciones();
+            RegistroInfraccion ri;
+
+            for (int a = 0; a < datosRegistros.Count; a = a + 7)
+            {
+                codigo = datosRegistros[a].ToString();
+                idTipo = int.Parse(datosRegistros[a + 1].ToString());
+                desc = datosRegistros[a + 2].ToString();
+                fechaRegistro = datosRegistros[a + 3].ToString();
+                fechaSuceso = DateTime.ParseExact(datosRegistros[a + 4].ToString(), "d/M/yyyy HH:mm:ss", null);
+                fechaDeVencimiento = datosRegistros[a + 5].ToString();
+                dominio = datosRegistros[a + 6].ToString();
+
+                ri = new RegistroInfraccion(codigo, dominio, desc, buscarTipoInfraccion(idTipo), fechaSuceso, fechaRegistro);
+
+                infracciones.Add(ri);
+            }
+
         }
 
         public void recuperarTiposInfraccion()
@@ -50,8 +76,26 @@ namespace CapaNegocio
                 tiposInfraccion.Add(ti);
             }
         }
-        //ver el tema de la busqueda por el idTipo
-        public static TipoInfraccion buscarTipoInfraccion(string descripcion)
+
+        public TipoInfraccion buscarTipoInfraccion(int indice)
+        {
+            //ArrayList datosTipoInfraccion = Datos.RecuperarTipoDeInfraccion(indice);
+            //TipoInfraccion ti = new TipoInfraccionLeve(12, "  ", 123);
+
+            TipoInfraccion ti = null;
+            int i = 0;
+
+            while (indice != tiposInfraccion[i].IdTipo && i < tiposInfraccion.Count)
+            {
+                i++;
+            }
+
+            ti = tiposInfraccion[i];
+
+            return ti;
+        }
+
+        public static TipoInfraccion buscarTipoInfraccionPorDesc(string descripcion)
         {
             TipoInfraccion ti;
             int position = descripcion.IndexOf(" ");
@@ -91,7 +135,6 @@ namespace CapaNegocio
         public ArrayList pasarRegistroInfraccionARelacional(RegistroInfraccion ri)
         {
             ArrayList datos = new ArrayList();
-            bool insercionOK = false;
             datos.Add(ri.Codigo);
             datos.Add(ri.TipoInfraccion.IdTipo);
             datos.Add(ri.Descripcion);
@@ -128,14 +171,30 @@ namespace CapaNegocio
                 todoBien = Datos.eliminarTipoInfraccion(ti.IdTipo);
                 todoBien = Datos.insertarTipoInfraccion(pasarTipoARelacional(tiModificado), tiModificado.sosGrave());
 
-                tiposInfraccion.Remove(ti);
-                tiposInfraccion.Add(tiModificado);
+                //tiposInfraccion.Remove(ti);
+                //tiposInfraccion.Add(tiModificado);
             }
 
             if (todoBien)
-                Datos.RecuperarTiposDeInfraccion();
+            {
+                this.tiposInfraccion = new List<TipoInfraccion>();
+                this.recuperarTiposInfraccion();
+            }
+                
 
             return todoBien;
+        }
+
+        public List<RegistroInfraccion> buscarInfracciones(string unDominio)
+        {
+            List<RegistroInfraccion> lista = new List<RegistroInfraccion>();
+            for (int i = 0; i < infracciones.Count; i++)
+            {
+                if (infracciones[i].Dominio == unDominio)
+                    lista.Add(infracciones[i]);
+            }
+
+            return lista;
         }
 
         /* 

@@ -52,5 +52,7 @@ namespace CapaNegocio
             return idTipo + " " + descripcion + " " + importe;
         }
 
+        public abstract float calcularImporte(string fechaVenc);
+
     }
 }

@@ -36,7 +36,7 @@ namespace UIWeb
             admin = new Administradora();
             string codigo = txtCodigo.Text;
             string dominio = txtDominio.Text;
-            TipoInfraccion tipoInfraccion = Administradora.buscarTipoInfraccion(ddTipoInfraccion.SelectedValue);
+            TipoInfraccion tipoInfraccion = Administradora.buscarTipoInfraccionPorDesc(ddTipoInfraccion.SelectedValue);
             string descripcion = txtDescripcion.Text;
             string fechaRegistro = cFechaRegistracion.SelectedDate.ToString();
             DateTime fechaSuceso = cFechaSuceso.SelectedDate;

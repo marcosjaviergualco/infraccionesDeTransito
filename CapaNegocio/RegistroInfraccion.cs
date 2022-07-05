@@ -71,6 +71,15 @@ namespace CapaNegocio
             set { fecha_de_vencimiento = value; }
         }
 
+        public float darImporte()
+        {
+            float subtotal = 0;
+
+            subtotal = tipoInfraccion.calcularImporte(fecha_de_vencimiento);
+
+            return subtotal;
+        }
+
         public override string ToString()
         {
             return "Dominio: " + this.dominio + "Descripción: " + this.descripcion + "Tipo de infracción: " + this.tipoInfraccion;

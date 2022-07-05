@@ -17,31 +17,7 @@ namespace UIWeb
             if (this.IsPostBack)
             {
                 recuperarAdmin();
-                /*
-                if (TextBoxCodigo.Text == "" || TextBoxDescripcion.Text == "" || TextBoxImporte.Text == "")
-                {
-                    lblValidacion.Text = "Los campos de Código, descripción e importe deben estar completos.";
-                }
-                else { */
 
-                    int idTipo = int.Parse(TextBoxCodigo.Text);
-                    string desc = TextBoxDescripcion.Text.ToString();
-                    float imp = float.Parse(TextBoxImporte.Text.ToString());
-
-                    TipoInfraccion tiModificado;
-
-                    if (RadioButtonGrave.Checked)
-                        tiModificado = new TipoInfraccionGrave(idTipo, desc, imp);
-                    else
-                        tiModificado = new TipoInfraccionLeve(idTipo, desc, imp);
-
-                    if (adm.modificar(ti, tiModificado))
-                        Label9.Text = "ACTUALIZACION REALIZADA CON EXITO!!!!!";
-                    else
-                        Label9.Text = "hubo un error";
-
-                //}
-                
             }
             else
             {
@@ -70,7 +46,24 @@ namespace UIWeb
         // ver modificar categoria
         protected void ButtonModificar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("ModificarTipoInfraccion.aspx");
+
+            int idTipo = int.Parse(TextBoxCodigo.Text);
+            string desc = TextBoxDescripcion.Text.ToString();
+            float imp = float.Parse(TextBoxImporte.Text.ToString());
+
+            TipoInfraccion tiModificado;
+
+            if (RadioButtonGrave.Checked)
+                tiModificado = new TipoInfraccionGrave(idTipo, desc, imp);
+            else
+                tiModificado = new TipoInfraccionLeve(idTipo, desc, imp);
+
+            if (adm.modificar(ti, tiModificado))
+                Label9.Text = "ACTUALIZACION REALIZADA CON EXITO!!!!!";
+            else
+                Label9.Text = "hubo un error";
+
+            
         }
 
         protected void ButtonCancelar_Click(object sender, EventArgs e)
